@@ -38,9 +38,9 @@ function BottomBar() {
 
       {/* Get Started Button */}
       <div className="text-center mb-10">
-        <button onClick={handleGetStarted} 
+        <button onClick={handleGetStarted}
           className="learn-more group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-400/40 rounded-xl text-white text-lg font-medium hover:from-purple-500/30 hover:to-pink-500/30 hover:border-purple-400/60 transition-all duration-500 backdrop-blur-sm shadow-lg shadow-purple-400/20 hover:shadow-purple-400/30 transform hover:scale-105"
-                style={{ transitionDelay: '0.6s' }}
+          style={{ transitionDelay: '0.6s' }}
         >
           Get Started
         </button>
@@ -60,11 +60,11 @@ function BottomBar() {
             </span>
             <br />
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Blog Posts
+              Articles
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-          Stay ahead of the curve with our expert insights, industry trends, and actionable strategies from the best marketing agency in Calicut to elevate your digital marketing game.
+           Here’s where all our fresh reads live. From quick updates to in-depth stories, this space brings you ideas, tips, and perspectives worth your time. We keep it simple, useful, and real—so you always have something new to explore.
           </p>
         </div>
 

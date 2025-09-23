@@ -49,7 +49,7 @@ const WydexMedia: React.FC = () => {
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center space-y-6 animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-[1.1]">
-            Wydex Media
+            Grovex
           </h1>
           <p className="max-w-2xl text-lg sm:text-xl md:text-2xl opacity-90 px-4 md:px-0">
             The Best Digital Marketing Agency in Calicut

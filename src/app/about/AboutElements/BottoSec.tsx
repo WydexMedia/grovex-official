@@ -13,25 +13,10 @@ function BottomSec() {
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <div className="inline-block">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r  from-cyan-600 to-purple-600 bg-clip-text text-transparent">
-              🚀 Let Wydex Media Help You Win Online
-            </h2>
-            <div className="w-32 h-1 bg-black mx-auto mb-8"></div>
-          </div>
-          
-          <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
-            Whether you choose Google Ads, Meta Ads, or a mix of both, we&apos;re here to help you succeed. 
-            Ready to build your success story with the best digital marketing agency in Calicut?
-          </p>
-        </div>
+        
 
         {/* Enquiry Form */}
-        <div className="max-w-2xl mx-auto mb-16 bg-white border border-gray-200 rounded-2xl shadow p-8">
-          <h3 className="text-2xl font-bold mb-6 text-center text-black">Enquiry Form</h3>
-          <EnquiryForm />
-        </div>
+     
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

@@ -28,9 +28,9 @@ function HomeVideo() {
         <section className="flex-1 flex items-center justify-center text-center px-4 py-20">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-6xl  md:text-7xl  font-bold text-white mb-6 leading-tight">
-            Best Digital  Marketing Agency{' '}
+            Advanced Meta Ads Course{' '}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-               in Calicut
+               in Kerala
               </span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">

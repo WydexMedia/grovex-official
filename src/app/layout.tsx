@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Best digital marketing agency in Calicut | advertising agency in Calicut",
+  title: "Advanced Meta Ads Course in Kerala  | advertising agency in Calicut",
   description:
-    "Wydex Media is the best digital marketing agency in Calicut and a top advertising agency in Calicut, delivering creative, ROI-driven marketing solutions.",
-  authors: [{ name: "Wydex Media", url: "https://wydexmedia.com" }],
+    "Grovex is the best Learning marketing agency in Calicut and a top advertising agency in Calicut, delivering creative, ROI-driven marketing solutions.",
+  authors: [{ name: "Grovex", url: "https://www.grovexlearning.com " }],
   generator: "Next.js",
-  applicationName: "Wydex Media",
+  applicationName: "Grovex",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Best digital marketing agency in Calicut",
@@ -31,24 +31,24 @@ export const metadata: Metadata = {
     "SEO Calicut",
     "PPC Calicut",
   ],
-  creator: "Wydex Media",
-  publisher: "Wydex Media",
-  metadataBase: new URL("https://www.wydexmedia.com"),
+  creator: "Grovex",
+  publisher: "Grovex",
+  metadataBase: new URL("https://www.grovexlearning.com"),
   alternates: {
-    canonical: "https://www.wydexmedia.com",
+    canonical: "https://www.grovexlearning.com",
   },
   openGraph: {
-    title: "Wydex Media | Best Digital Marketing Agency in Calicut",
+    title: "Grovex | Grovex",
     description:
       "We are Calicut's leading digital marketing and advertising agency offering SEO, PPC, social media marketing, and branding services.",
-    url: "https://wydexmedia.com",
-    siteName: "Wydex Media",
+    url: "https://www.grovexlearning.com",
+    siteName: "Grovex ",
     images: [
       {
-        url: "https://wydexmedia.com/og-image.jpg", // Replace with real image
+        url: "wydex Clinets black/Grovex best digital marketing agency in calicut.webp", // Replace with real image
         width: 1200,
         height: 630,
-        alt: "Wydex Media - Best Digital Marketing Agency in Calicut",
+        alt: "Grovex- Best Digital Course Providing institute in Calicut",
       },
     ],
     locale: "en_IN",
@@ -56,12 +56,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wydex Media",
+    title: "Grovex",
     description:
       "Top digital marketing and advertising agency in Calicut specializing in creative and ROI-driven strategies.",
     site: "@wydexmedia", // Replace with your real Twitter handle
     creator: "@wydexmedia",
-    images: ["https://wydexmedia.com/og-image.jpg"],
+    images: ["/wydex Clinets black/Grovex best digital marketing agency in calicut.webp"],
   },
   robots: {
     index: true,

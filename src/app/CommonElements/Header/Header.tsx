@@ -61,13 +61,13 @@ function Header() {
         <div className="flex justify-between items-center h-16 md:h-20">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex  items-center space-x-2 group">
             <Image
-              src="/images/wydex-whitelogo.png"
-              alt="Wydex Logo"
-              width={32}
-              height={32}
-              className="h-8 sm:h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              src="/Logo/GROVEX LOGO.png"
+              alt="grovex Logo"
+              width={60}
+              height={60}
+              className=" w-[110px] h-[110px] object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
           

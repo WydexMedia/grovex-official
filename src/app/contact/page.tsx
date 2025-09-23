@@ -72,7 +72,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <h2 className="text-xl md:text-2xl font-semibold text-gray-700 tracking-wide mb-4">
-        Get in touch with the Best Digital Marketing Agency in Calicut
+        Get in touch with Grovex
         </h2>
 
         <EnquiryForm />
