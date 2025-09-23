@@ -34,10 +34,10 @@ const WydexMedia: React.FC = () => {
 
   return (
     <div className="w-full min-h-[500px] bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white font-sans">
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden flex items-center justify-center py-24 md:py-40 px-4 text-center">
-        
+
         {/* Subtle Grid Background Overlay */}
         <div
           className="absolute inset-0 opacity-20 pointer-events-none"
@@ -48,18 +48,33 @@ const WydexMedia: React.FC = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center space-y-6 animate-fade-in-up">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-[1.1]">
-            Wydex Media
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-[1.1] 
+               bg-gradient-to-r from-[#086046] to-[#18cb96] bg-clip-text text-transparent">
+            Best Performance Marketing in Kerala
           </h1>
-          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl opacity-90 px-4 md:px-0">
-            The Best Digital Marketing Agency in Calicut
+
+          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl opacity-90 px-4 md:px-0 ">
+            <span className="text-white bg-clip-text text-transparent font-semibold">
+              The Best Digital Marketing Agency in Calicut
+            </span>
+
           </p>
           <button
             onClick={() => scrollToSection('contact')}
-            className="inline-block px-8 py-3 md:px-10 md:py-4 bg-white text-black rounded-full border-2 border-white font-semibold transition-all duration-300 hover:bg-transparent hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black cursor-pointer"
-          >
-            Get Started Today
+            className="inline-block px-8 py-3 md:px-10 md:py-4 
+            border-4 border-white
+             text-white text-[16px] rounded-full font-semibold 
+             transition-all duration-300 
+             hover:opacity-90 hover:scale-105 
+             focus:outline-none focus:ring-2 focus:ring-[#18cb96] 
+             focus:ring-offset-2 focus:ring-offset-black 
+             cursor-pointer">
+            <span className="bg-gradient-to-r to-[#82479C] from-[#2160A5] bg-clip-text text-transparent font-bold">
+              Get Started Today
+            </span>
+
           </button>
+
         </div>
       </section>
 

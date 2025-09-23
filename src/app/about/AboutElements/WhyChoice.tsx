@@ -7,12 +7,13 @@ const WhyChooseWydexMedia: React.FC = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Why Choose Wydex Media?
+           Why Choose Our Meta Ads Course?
           </h1>
           <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
           <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            As the best digital marketing agency in Calicut, we believe success comes from the right strategy, 
-            creative quality, and continuous improvement. We help brands grow faster with smart, performance-driven ad campaigns.
+           Master Meta (Facebook & Instagram) Ads with Grovex and learn how to create campaigns that deliver real results.
+            Our course blends hands-on training, up-to-date strategies, and expert guidance — giving you the skills to grow businesses,
+             land freelance projects, or advance your career.
           </p>
         </div>
 

@@ -7,35 +7,35 @@ const numberColors = ["text-blue-600", "text-purple-600", "text-pink-600", "text
 const iconColors = ["text-blue-500", "text-purple-500", "text-pink-500", "text-green-500"];
 
 const services = [
- {
-  no: 1,
-  title: 'Social Media Marketing',
-  description: 'Wydax Media is one of the best digital marketing agencies in Calicut, helping businesses grow with expert social media marketing strategies. We create engaging content, targeted ads, and data-driven campaigns to boost your brand on Facebook, Instagram, and LinkedIn.',
-  icon: <Users className="w-12 h-12" />,
-  features: [],
-},
-{
-  no: 2,
-  title: 'SEO',
-  description: 'As one of the best digital marketing agencies in Calicut, we improve your website’s Google ranking with expert SEO strategies. Our services include keyword research, on-page SEO, content optimization, and link building to drive long-term results.',
-  icon: <Search className="w-12 h-12" />,
-  features: [],
-},
-{
-  no: 3,
-  title: 'Web Design & Development',
-  description: 'We craft responsive, SEO-friendly websites that blend design with performance. Our web solutions ensure smooth user experience, fast loading speeds, mobile optimization, and a strong online presence that drives conversions.',
-  icon: <Palette className="w-12 h-12" />,
-  features: [],
-},
-{
-  no: 4,
-  title: 'Branding & Strategy',
-  description: 'We craft powerful brand identities and strategic roadmaps that resonate with your audience. From logo design to brand positioning, we ensure consistency, clarity, and creativity across all channels to drive lasting impact — as a top performance marketing agency in Calicut.',
-  icon: <Target className="w-12 h-12" />,
-  features: [],
-},
-  
+  {
+    no: 1,
+    title: 'Marketing Psychology',
+    description: 'Learn how to run effective ad campaigns on Facebook and Instagram. From audience targeting to campaign optimization, this course teaches you how to generate leads and sales using Meta Ads.',
+    icon: <Users className="w-12 h-12" />,
+    features: [],
+  },
+  {
+    no: 2,
+    title: 'SEO (Search Engine Optimisation)',
+    description: 'Master the art of ranking websites on search engines. Our SEO course covers keyword research, on-page SEO, link building, and analytics—helping you drive consistent, organic traffic.',
+    icon: <Search className="w-12 h-12" />,
+    features: [],
+  },
+  {
+    no: 3,
+    title: 'Meta Ads',
+    description: 'Understand the mindset of customers and learn how psychology shapes buying decisions. This course gives you techniques to design strategies that connect with audiences on a deeper level.',
+    icon: <Palette className="w-12 h-12" />,
+    features: [],
+  },
+  {
+    no: 4,
+    title: 'Zoho Books Support',
+    description: 'Get hands-on training in Zoho Books, a powerful accounting software. Learn how to manage invoices, track expenses, handle GST, and streamline business finances with ease.',
+    icon: <Target className="w-12 h-12" />,
+    features: [],
+  },
+
 ];
 
 function Services() {
@@ -53,21 +53,23 @@ function Services() {
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-sm font-semibold tracking-wider uppercase">
-              Our Expertise
+
             </span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-              Premium
+
             </span>
             <br />
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Digital Services
+            <span className="bg-gradient-to-r from-[#086046] to-[#18cb96] bg-clip-text text-transparent">
+              Exploring our Courses
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Why Choose the Best Digital Marketing Agency in Calicut? We deliver exceptional results through innovative strategies, 
-            cutting-edge technology, and personalized service that drives your business forward.
+            At Grovex, we offer courses designed to give you practical skills that can be applied in real business situations.
+             Each program is structured to be simple, clear, and result-focused.
+
+
           </p>
         </div>
 
@@ -78,32 +80,39 @@ function Services() {
               key={index}
               className="group relative bg-white border border-gray-200 p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full min-h-[420px] rounded-2xl"
             >
-              <div className="relative z-10 flex flex-col h-full justify-between">
-                {/* Big Service Number */}
-                <div className="flex items-center mb-6">
-                  <div className={`text-6xl font-extrabold mr-4 drop-shadow-sm select-none leading-none ${numberColors[index % numberColors.length]}`} style={{WebkitTextStroke: '1px #bdbdbd'}}>
-                    {String(service.no).padStart(2, '0')}
+              <div className="relative z-10 flex flex-col h-full">
+
+                {/* Top Section (Number + Icon + Title) */}
+                <div className="mb-6">
+                  <div className="flex items-center mb-4">
+                    <div
+                      className={`text-6xl font-extrabold mr-4 drop-shadow-sm select-none leading-none ${numberColors[index % numberColors.length]}`}
+                      style={{ WebkitTextStroke: "1px #bdbdbd" }}
+                    >
+                      {String(service.no).padStart(2, "0")}
+                    </div>
+                    <div className={iconColors[index % iconColors.length]}>
+                      {React.cloneElement(service.icon, { className: "w-12 h-12" })}
+                    </div>
                   </div>
-                  <div className={iconColors[index % iconColors.length]}>
-                    {React.cloneElement(service.icon, { className: "w-12 h-12" })}
-                  </div>
+
+                  {/* Title directly under number + icon */}
+                  <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
+                    {service.title}
+                  </h3>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 tracking-tight">
-                  {service.title}
-                </h3>
-
                 {/* Description */}
-                <p className="text-gray-600 text-base leading-relaxed mb-8">
+                <p className="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
                   {service.description}
                 </p>
 
-                {/* CTA Button */}
+                {/* CTA Button (optional at bottom) */}
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ function Decision() {
             <div className="text-center mb-12 sm:mb-16 lg:mb-20">
               
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black leading-tight">
+              {/* <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black leading-tight">
                 How to Choose the 
                 <span className="block text-gray-700 mt-2">
                   Right One for Your Business?
@@ -76,94 +76,11 @@ function Decision() {
                 <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                   Make informed decisions with our comprehensive guide to selecting the perfect advertising platform for your unique business needs.
                 </p>
-              </div>
+              </div> */}
             </div>
             
             {/* Decision Cards */}
-            <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-              {decisionOptions.map((option, index) => (
-                <div
-                  key={index}
-                  className="decision-card group relative bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-gray-100 shadow-lg transition-all duration-500  hover:shadow-2xl hover:border-black"
-                >
-                  {/* Card Header */}
-                  <div className="text-center mb-6 sm:mb-8">
-                    <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-black text-white rounded-full mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <span className="text-2xl sm:text-3xl">{option.icon}</span>
-                    </div>
-                    
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black mb-4 sm:mb-6 leading-tight">
-                      {option.title}
-                    </h3>
-                  </div>
-                  
-                  {/* Description */}
-                  <p className="text-gray-700 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg">
-                    {option.description}
-                  </p>
-                  
-                  {/* Features List */}
-                  <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-                    {option.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-gray-800 text-sm sm:text-base">
-                        <div className="w-2 h-2 bg-black rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-                        <span>{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  {/* Action Button */}
-                  <div className="text-center">
-                    {index === 0 && (
-                      <a
-                        href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20learn%20more%20about%20Google%20Ads."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-6 py-3 bg-black text-white font-semibold rounded-full transition-all duration-300 hover:bg-gray-800 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-gray-300 text-sm sm:text-base cursor-pointer"
-                      >
-                        <span>Learn More</span>
-                        <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </a>
-                    )}
-                    {index === 1 && (
-                      <a
-                        href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20learn%20more%20about%20Meta%20Ads."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-6 py-3 bg-black text-white font-semibold rounded-full transition-all duration-300 hover:bg-gray-800 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-gray-300 text-sm sm:text-base cursor-pointer"
-                      >
-                        <span>Learn More</span>
-                        <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </a>
-                    )}
-                    {index === 2 && (
-                      <a
-                        href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20learn%20more%20about%20combining%20Google%20and%20Meta%20Ads."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-6 py-3 bg-black text-white font-semibold rounded-full transition-all duration-300 hover:bg-gray-800 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-gray-300 text-sm sm:text-base cursor-pointer"
-                      >
-                        <span>Learn More</span>
-                        <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
-                  
-                  {/* Decorative Elements */}
-                  <div className="absolute top-4 right-4 w-8 h-8 border-2 border-gray-200 rounded-full opacity-0 group-hover:opacity-100 group-hover:border-black transition-all duration-300"></div>
-                  <div className="absolute bottom-4 left-4 w-6 h-6 border-2 border-gray-200 rounded-full opacity-0 group-hover:opacity-100 group-hover:border-black transition-all duration-300"></div>
-                  
-                  {/* Subtle Corner Accent */}
-                  {/* <div className="absolute top-0 right-0 w-16 h-16 bg-black opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-bl-3xl"></div> */}
-                </div>
-              ))}
-            </div>
+           
             
             {/* Bottom CTA Section */}
             <div className="text-center mt-12 sm:mt-16 lg:mt-20">

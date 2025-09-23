@@ -138,21 +138,7 @@ function VideoAnimation() {
         data-section="build"
         className='relative bg-black h-screen overflow-hidden my-[-2px]'
       >
-        <div className='w-full'>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="https://res.cloudinary.com/dzdtdce9p/video/upload/v1752859860/market_nhharj.jpg"  // This should be a .jpg, not .mp4
-            className="absolute inset-0 w-full h-full object-cover z-0 transition-all duration-[2000ms] ease-out"
-            style={sectionVisibility.build ? getVideoTransform(1) : { opacity: 0, transform: 'scale(0.8) translateY(100px)' }}
-          >
-            <source src="https://res.cloudinary.com/dzdtdce9p/video/upload/v1752859860/market_nhharj.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-        </div>
+        
 
 
         <div className="relative z-20 w-full h-full flex flex-col ">
@@ -186,20 +172,7 @@ function VideoAnimation() {
         data-section="market"
         className='relative bg-black h-screen overflow-hidden my-[-1px]'
       >
-        <div className='w-full'>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster='https://res.cloudinary.com/dzdtdce9p/video/upload/v1752859859/butterfly_oumulj.mp4'
-            className='absolute inset-0 w-full h-full object-cover z-0 transition-all duration-[2000ms] ease-out'
-            style={sectionVisibility.market ? getVideoTransform(2) : { opacity: 0, transform: 'scale(0.8) translateY(100px)' }}
-          >
-            <source src='https://res.cloudinary.com/dzdtdce9p/video/upload/v1752859859/butterfly_oumulj.mp4' type='video/mp4' />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        
 
 
         <div className="relative z-20 w-full h-full flex flex-col">

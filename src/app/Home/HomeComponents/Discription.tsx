@@ -17,7 +17,7 @@ function Discription() {
   }, []);
 
   const text =
-    `"We are a passionate team in Calicut helping businesses grow through creative, result-driven strategies. Recognized as the best digital marketing agency in Calicut, we deliver measurable success for every brand we work with."`;
+    `“We are an online learning platform dedicated to empowering individuals with in-demand skills. At Grovex, we bridge creativity, strategy, and technology through courses in Digital Marketing, SEO, Meta Ads, Marketing Psychology, and Zoho Books—helping learners grow into confident professionals.”`;
   const words = text.split(' ');
 
   // Define animation range

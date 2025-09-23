@@ -19,16 +19,16 @@ function FooterPage() {
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-6">
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="h-14 flex justify-center items-center">
+              <div className=" flex justify-center items-center">
                 <Image
-                  src="/images/wydex-whitelogo.png"
-                  alt="Wydex Logo"
-                  width={50}
-                  height={50}
-                  className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                  src="/Logo/GROVEX LOGO.png"
+                  alt="Grovex Logo"
+                  width={150}
+                  height={150}
+                  className="h-[110px] md:h-14 w-[110px] object-contain transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <p className="text-xl font-semibold text-blue-400">WYDEX Media</p>
+              <p className="text-xl font-semibold text-blue-400">Grovex</p>
             </div>
 
             <p className="text-gray-400 text-base leading-relaxed text-center">
@@ -44,21 +44,21 @@ function FooterPage() {
                 <MessageCircle className="w-6 h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/company/wydex-media/posts/?feedView=all"
+                href="https://www.linkedin.com/company/grovex-learning/"
                 className="text-gray-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"
                 target="_blank" rel="noopener noreferrer"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://www.instagram.com/wydexmedia?utm_source=ig_web_button_share_sheet&igsh=MWlwa3I0ODV3MmVhdw=="
+                href="https://www.instagram.com/grovexlearning?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 className="text-gray-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"
                 target="_blank" rel="noopener noreferrer"
               >
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href="https://www.facebook.com/wydexmedia"
+                href="https://www.facebook.com/profile.php?id=61569502942489"
                 className="text-gray-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"
                 target="_blank" rel="noopener noreferrer"
               >
@@ -105,7 +105,7 @@ function FooterPage() {
             <div className="space-y-5">
               {[
                 { label: 'General', icon: <Phone />, value: '+91 9188380779', href: 'tel:+91 9188380779' },
-                { label: 'Email', icon: <Mail />, value: 'wydexmedia@gmail.com', href: 'mailto:wydexmedia@gmail.com' },
+                { label: 'Email', icon: <Mail />, value: 'grovexlearning@gmail.com', href: 'mailto:grovexlearning@gmail.com' },
                 { label: 'WhatsApp', icon: <MessageCircle />, value: '+91 9188380779', href: 'https://wa.me/9188380779' },
                 { label: 'HR Enquiry', icon: <Phone />, value: '+91 7593 885 895', href: 'tel:+917593885895' }
               ].map((item, i) => (
@@ -129,7 +129,7 @@ function FooterPage() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-base">
-              <span className="text-blue-400 font-bold">WYDEX</span> © 2025 All rights reserved
+              <span className="text-blue-400 font-bold">Grovex</span> © 2025 All rights reserved
             </div>
             <div className="flex space-x-8 text-base">
               <a href="/privacy-policy" className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-1">
