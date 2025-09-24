@@ -255,14 +255,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-<<<<<<< HEAD
-        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-          Contact Us
-        </h1>
-        <h2 className="text-xl md:text-2xl font-semibold text-gray-700 tracking-wide mb-4">
-        Get in touch with Grovex
-        </h2>
-=======
       {/* Main Content */}
       <div className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -278,7 +270,6 @@ export default function ContactPage() {
                   If you require clarifications on any of the courses or the admission process, we are happy to help.
                 </p>
               </div>
->>>>>>> 8ad018e51043876f11b58e3d1ee4a8ac43e67d1d
 
               {/* Contact Details */}
               <div className="space-y-6">
