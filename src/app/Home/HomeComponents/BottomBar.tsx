@@ -39,7 +39,7 @@ function BottomBar() {
       {/* Get Started Button */}
       <div className="text-center mb-10">
         <button onClick={handleGetStarted}
-          className="learn-more group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-400/40 rounded-xl text-white text-lg font-medium hover:from-purple-500/30 hover:to-pink-500/30 hover:border-purple-400/60 transition-all duration-500 backdrop-blur-sm shadow-lg shadow-purple-400/20 hover:shadow-purple-400/30 transform hover:scale-105"
+          className="learn-more group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#086046] to-[#18cb96]  border border-green-400/40 rounded-xl  text-lg font-medium    transition-all duration-500 backdrop-blur-sm shadow-lg   transform hover:scale-105"
           style={{ transitionDelay: '0.6s' }}
         >
           Get Started
@@ -50,7 +50,7 @@ function BottomBar() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-sm font-semibold tracking-wider uppercase">
+            <span className="text-white bg-clip-text  text-sm font-semibold tracking-wider uppercase">
               Insights & Knowledge
             </span>
           </div>

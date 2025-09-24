@@ -1,7 +1,7 @@
 'use clind'
 import React, { useState, useEffect } from 'react';
 
-function Discription() { 
+function Discription() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -56,10 +56,10 @@ function Discription() {
                       ? 'rgba(255,255,255,1)'
                       : 'rgba(255,255,255,0.2)',
                     textShadow: isCurrentWord
-                      ? `0 0 10px rgba(0, 119, 255, 1), 
-                       0 0 20px rgba(0, 119, 255, 0.8), 
-                       0 0 40px rgba(0, 119, 255, 0.6), 
-                       0 0 60px rgba(0, 119, 255, 0.4)`
+                      ? `0 0 10px rgba(0, 200, 100, 1),
+                         0 0 20px rgba(0, 200, 100, 0.8),
+                         0 0 40px rgba(0, 200, 100, 0.6),
+                         0 0 60px rgba(0, 200, 100, 0.4)`
                       : 'none',
                     filter: isCurrentWord ? 'brightness(1.3)' : 'none',
                     marginRight: '0.3em',

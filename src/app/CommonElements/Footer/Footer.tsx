@@ -32,12 +32,12 @@ function FooterPage() {
             </div>
 
             <p className="text-gray-400 text-base leading-relaxed text-center">
-              As the best digital marketing agency in Calicut, we drive growth through creative marketing and technology solutions tailored for your success.
+              As the best digital Course providing agency in Calicut, we drive growth through learning our courses and technology solutions tailored for your success.
             </p>
 
             <div className="flex justify-center space-x-6 pt-4">
               <a
-                href="https://wa.me/9188380779"
+                href=""
                 className="text-gray-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"
                 target="_blank" rel="noopener noreferrer"
               >
@@ -75,27 +75,15 @@ function FooterPage() {
             <div className="space-y-3">
               <Link href="/about" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">About</Link>
               <Link href="/#services" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Services</Link>
-              <Link href="#" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Industries</Link>
-              <Link href="#" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Works</Link>
-              <Link href="/career" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Careers</Link>
+             
               <Link href="/contact" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Contact</Link>
             </div>
           </div>
 
           {/* Services Section */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-bold text-blue-400 border-b border-blue-400/30 pb-3">
-              Services
-            </h3>
-            <div className="space-y-3">
-              <Link href="/blog/687bf922b20248e47a5e4fa4/" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Branding</Link>
-              <Link href="/blog/687bff287c583f346bd03604/" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Experience Design</Link>
-              <Link href="/blog/687dd90b7c583f346bd03609/" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Technology</Link>
-              <Link href="/blog/687bff8f7c583f346bd03606/" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Digital Marketing</Link>
-              <Link href="/blog/687bffae7c583f346bd03607/" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Resource Augmentation</Link>
-              <Link href="/blog/687bffc37c583f346bd03608/" className="block text-gray-300 hover:text-blue-400 transition-all duration-300 hover:translate-x-1 text-base">Partnership</Link>
-            </div>
-          </div>
+        <div>
+          
+        </div>
 
           {/* Connect Section */}
           <div className="space-y-6">
@@ -104,10 +92,10 @@ function FooterPage() {
             </h3>
             <div className="space-y-5">
               {[
-                { label: 'General', icon: <Phone />, value: '+91 9188380779', href: 'tel:+91 9188380779' },
+                { label: 'General', icon: <Phone />, value: '+91 85117 00916', href: 'tel:+91 85117 00916' },
                 { label: 'Email', icon: <Mail />, value: 'grovexlearning@gmail.com', href: 'mailto:grovexlearning@gmail.com' },
-                { label: 'WhatsApp', icon: <MessageCircle />, value: '+91 9188380779', href: 'https://wa.me/9188380779' },
-                { label: 'HR Enquiry', icon: <Phone />, value: '+91 7593 885 895', href: 'tel:+917593885895' }
+                { label: 'WhatsApp', icon: <MessageCircle />, value: '+91 85117 00916', href: '' },
+                { label: 'HR Enquiry', icon: <Phone />, value: '+91 85117 00916', href: 'tel:+9185117 00916' }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 group">
                   <div className="text-blue-400 group-hover:scale-110 transition-transform w-5 h-5">

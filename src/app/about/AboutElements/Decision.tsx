@@ -96,17 +96,13 @@ function Decision() {
                   
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
                     <a
-                      href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20get%20a%20free%20consultation."
+                      href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full sm:w-auto px-8 py-4 bg-black text-white font-semibold rounded-full transition-all duration-300 hover:bg-gray-800 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-gray-300 text-base sm:text-lg cursor-pointer"
                     >
                       Get Free Consultation
                     </a>
-                    
-                    <button className="w-full sm:w-auto px-8 py-4 bg-transparent text-black font-semibold rounded-full border-2 border-black transition-all duration-300 hover:bg-black hover:text-white hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gray-300 text-base sm:text-lg cursor-pointer">
-                      View Case Studies
-                    </button>
                   </div>
                 </div>
               </div>

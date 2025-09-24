@@ -21,17 +21,17 @@ function BottomSec() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
           <a
-            href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20contact%20you%20or%20get%20a%20call%20from%20you."
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="group px-10 py-4 bg-black text-white rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:-translate-y-2 transform relative overflow-hidden cursor-pointer"
           >
-            <span className="relative z-10">Contact Wydex Media Today</span>
+            <span className="relative z-10">Contact Grovex Today</span>
             <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
           
           <a
-            href="https://wa.me/919188380779?text=Hi%2C%20I%20am%20interested%20to%20learn%20more%20about%20your%20services."
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="group px-10 py-4 bg-transparent text-black rounded-full border-2 border-black font-semibold text-lg transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-2 transform cursor-pointer"
@@ -73,7 +73,7 @@ function BottomSec() {
             <h3 className="text-2xl font-bold mb-4">Ready to Start?</h3>
             <p className="text-gray-600 mb-4">Get your free consultation and campaign audit</p>
             <a
-              href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20get%20a%20free%20consultation."
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 px-6 py-3 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-all duration-300 cursor-pointer"
@@ -86,7 +86,7 @@ function BottomSec() {
             <h3 className="text-2xl font-bold mb-4">Need More Info?</h3>
             <p className="text-gray-300 mb-4">Download our free digital marketing guide</p>
             <a
-              href="https://wa.me/919188380779?text=Hi%2C%20I%20would%20like%20to%20get%20started%20with%20Wydex%20Media."
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 px-6 py-3 bg-white text-black rounded-full font-semibold text-lg hover:bg-gray-200 transition-all duration-300 cursor-pointer"
