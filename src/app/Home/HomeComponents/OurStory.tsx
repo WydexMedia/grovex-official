@@ -65,6 +65,7 @@ const OurStory: React.FC = () => {
         {/* Right side – 3D logo */}
         <div className="flex flex-col justify-center items-center bg-black rounded-2xl shadow-xl p-6 min-w-[260px] w-full max-w-[340px] h-[340px] mx-auto border border-gray-800">
 
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_digital_marketing.jpg"
             alt="Grovex"
