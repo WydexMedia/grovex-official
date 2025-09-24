@@ -48,7 +48,7 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems: string[] = ['Services', 'About', 'Careers', 'Contact'];
+  const navItems: string[] = ['Services', 'About', 'Contact'];
   // works
 
   return ( 
@@ -80,24 +80,28 @@ function Header() {
                 className="relative px-3 lg:px-4 py-2 text-neutral-300 hover:text-white hover:cursor-pointer   font-medium transition-all duration-300 group text-sm lg:text-base"
               >
                 <span className="relative z-10" >{item}</span>
-                <div className="absolute inset-0 bg-blue-400/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
-                <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-400 group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-green-400/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
+                <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-green-400 group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
               </div>
             ))}
           </nav>
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <button onClick={handleGetStarted} className="px-5 py-2 bg-black border border-blue-400/30 text-white font-medium rounded-lg hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer">
-              Get Started
-            </button>
-          </div>
+  <button 
+    onClick={handleGetStarted} 
+    className="px-5 py-2 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
+  >
+    Get Started
+  </button>
+</div>
+
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-neutral-300 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-blue-400/10"
+              className="text-neutral-300 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-green-400/10"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>

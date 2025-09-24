@@ -2,9 +2,9 @@ import React from 'react';
 
 function HomeVideo() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
-      <div className="fixed inset-0 w-full h-full ">
-        <video
+    <div className="relative w-full min-h-screen overflow-hidden bg-black">
+      <div className="fixed inset-0 w-full h-full bg-black ">
+        {/* <video
           className="w-full h-full object-cover "
           autoPlay
           loop
@@ -14,10 +14,10 @@ function HomeVideo() {
           preload="metadata"
         >
           <source src="https://res.cloudinary.com/dzdtdce9p/video/upload/v1752859859/video1_wojeup.mp4" type="video/mp4" />
-          {/* Fallback for browsers that don't support video */}
-          <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100" />
-        </video>
-
+          
+         
+        </video> */}
+ <div className="w-full bg-black h-full bg-gradient-to-br from-blue-100 to-purple-100" />
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
@@ -25,15 +25,18 @@ function HomeVideo() {
       {/* Content Overlay */}
       <div className="relative z-10  w-full min-h-screen flex flex-col">
         {/* Hero Section */}
-        <section className="flex-1 flex items-center justify-center text-center px-4 py-20">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl  md:text-7xl  font-bold text-white mb-6 leading-tight">
-            Advanced Meta Ads Course{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+        <section className="flex-1 flex bg-white items-center justify-center text-center px-4 py-20">
+          <div className="max-w-4xl mx-auto ">
+            <h1 className="text-6xl  md:text-7xl   font-bold text-white mb-6 leading-tight ">
+            <span className='bg-gradient-to-r to-[#086046] from-[#18cb96] bg-clip-text text-transparent'> 
+              Advanced Meta Ads Course{' '} 
+
+            </span>
+              <span className="bg-gradient-to-r to-[#086046] from-[#067f5b] bg-clip-text text-transparent">
                in Kerala
               </span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-black  max-w-3xl mx-auto mb-8 leading-relaxed">
               Experience immersive visuals through our creative video storytelling
             </p>
 

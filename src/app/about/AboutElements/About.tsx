@@ -45,12 +45,12 @@ function About() {
                 <div className="absolute top-20 left-10 w-20 h-20 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
                 <div className="absolute bottom-20 right-10 w-32 h-32 bg-cyan-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse animation-delay-2000"></div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Header */}
                     <div className="section-header text-center mb-12 sm:mb-16 lg:mb-20">
 
 
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 text-gray-900 leading-tight">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 text-[#1A1D1F] leading-tight">
                             Smart Advertising Choices That
                             <span className="block bg-gradient-to-r from-[#186046] to-[#18cb96] bg-clip-text text-transparent mt-2">
                                 Drive Results

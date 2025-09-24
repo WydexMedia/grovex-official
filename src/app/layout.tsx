@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Grovex ",
     images: [
       {
-        url: "wydex Clinets black/Grovex best digital marketing agency in calicut.webp", // Replace with real image
+        url: "Logo/Grovex best digital marketing agency in calicut.webp", // Replace with real image
         width: 1200,
         height: 630,
         alt: "Grovex- Best Digital Course Providing institute in Calicut",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       "Top digital marketing and advertising agency in Calicut specializing in creative and ROI-driven strategies.",
     site: "@wydexmedia", // Replace with your real Twitter handle
     creator: "@wydexmedia",
-    images: ["/wydex Clinets black/Grovex best digital marketing agency in calicut.webp"],
+    images: ["/Logo/Grovex best digital marketing agency in calicut.webp"],
   },
   robots: {
     index: true,

@@ -1,38 +1,38 @@
 import React from 'react';
 import {
-  Search, Palette, Target, Users
+  Search, Palette, Target, Users, Brain ,TrendingUp ,Instagram, BookOpen
 } from 'lucide-react';
 
-const numberColors = ["text-blue-600", "text-purple-600", "text-pink-600", "text-green-600"];
-const iconColors = ["text-blue-500", "text-purple-500", "text-pink-500", "text-green-500"];
+// const numberColors = ["text-blue-600", "text-purple-600", "text-pink-600", "text-green-600"];
+// const iconColors = ["text-blue-500", "text-purple-500", "text-pink-500", "text-green-500"];
 
 const services = [
   {
     no: 1,
     title: 'Marketing Psychology',
     description: 'Learn how to run effective ad campaigns on Facebook and Instagram. From audience targeting to campaign optimization, this course teaches you how to generate leads and sales using Meta Ads.',
-    icon: <Users className="w-12 h-12" />,
+    icon: <Brain className="w-12 h-12" />,
     features: [],
   },
   {
     no: 2,
     title: 'SEO (Search Engine Optimisation)',
     description: 'Master the art of ranking websites on search engines. Our SEO course covers keyword research, on-page SEO, link building, and analytics—helping you drive consistent, organic traffic.',
-    icon: <Search className="w-12 h-12" />,
+    icon: <TrendingUp className="w-12 h-12" />,
     features: [],
   },
   {
     no: 3,
     title: 'Meta Ads',
     description: 'Understand the mindset of customers and learn how psychology shapes buying decisions. This course gives you techniques to design strategies that connect with audiences on a deeper level.',
-    icon: <Palette className="w-12 h-12" />,
+    icon: <Instagram className="w-12 h-12" />,
     features: [],
   },
   {
     no: 4,
     title: 'Zoho Books Support',
     description: 'Get hands-on training in Zoho Books, a powerful accounting software. Learn how to manage invoices, track expenses, handle GST, and streamline business finances with ease.',
-    icon: <Target className="w-12 h-12" />,
+    icon: <BookOpen className="w-12 h-12" />,
     features: [],
   },
 
@@ -74,44 +74,53 @@ function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {services.map((service, index) => (
+    <div
+      key={index}
+      className="group relative bg-white border border-gray-200 p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full min-h-[420px] rounded-2xl"
+    >
+      <div className="relative z-10 flex flex-col h-full">
+
+        {/* Top Section (Number + Icon + Title) */}
+        <div className="mb-6">
+          <div className="flex items-center mb-4">
+            {/* Number in black */}
             <div
-              key={index}
-              className="group relative bg-white border border-gray-200 p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full min-h-[420px] rounded-2xl"
+              className="text-6xl font-extrabold mr-4 drop-shadow-sm select-none leading-none text-black"
+              style={{ WebkitTextStroke: "1px #bdbdbd" }}
             >
-              <div className="relative z-10 flex flex-col h-full">
-
-                {/* Top Section (Number + Icon + Title) */}
-                <div className="mb-6">
-                  <div className="flex items-center mb-4">
-                    <div
-                      className={`text-6xl font-extrabold mr-4 drop-shadow-sm select-none leading-none ${numberColors[index % numberColors.length]}`}
-                      style={{ WebkitTextStroke: "1px #bdbdbd" }}
-                    >
-                      {String(service.no).padStart(2, "0")}
-                    </div>
-                    <div className={iconColors[index % iconColors.length]}>
-                      {React.cloneElement(service.icon, { className: "w-12 h-12" })}
-                    </div>
-                  </div>
-
-                  {/* Title directly under number + icon */}
-                  <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
-                    {service.title}
-                  </h3>
-                </div>
-
-                {/* Description */}
-                <p className="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
-                  {service.description}
-                </p>
-
-                {/* CTA Button (optional at bottom) */}
-              </div>
+              {String(service.no).padStart(2, "0")}
             </div>
-          ))}
+
+            {/* Icon always black */}
+            <div className="text-black">
+              {React.cloneElement(service.icon, { className: "w-12 h-12 text-black" })}
+            </div>
+          </div>
+
+          {/* Title */}
+          <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
+            {service.title}
+          </h3>
         </div>
+
+        {/* Description */}
+        <p className="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
+          {service.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
+
+       
+
+      
+
+
+
 
       </div>
     </section>
