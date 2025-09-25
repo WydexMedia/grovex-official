@@ -25,32 +25,35 @@ function HomeVideo() {
       {/* Content Overlay */}
       <div className="relative z-10  w-full min-h-screen flex flex-col">
         {/* Hero Section */}
-        <section className="flex-1 flex bg-white items-center justify-center text-center px-4 py-20">
-          <div className="max-w-4xl mx-auto ">
-            <h1 className="text-6xl  md:text-7xl   font-bold text-white mb-6 leading-tight ">
-            <span className='bg-gradient-to-r to-[#086046] from-[#18cb96] bg-clip-text text-transparent'> 
-              Advanced Meta Ads Course{' '} 
+        <section className="flex flex-col md:flex-row bg-black items-center justify-center text-center px-4 py-20">
+  {/* Text Section */}
+  <div className="max-w-4xl mx-auto md:w-1/2 md:text-left text-center md:flex md:flex-col md:justify-center md:items-center">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+      <span className="bg-gradient-to-r to-[#086046] from-[#18cb96] bg-clip-text text-transparent">
+        Advanced Meta Ads Course{" "}
+      </span>
+      <span className="bg-gradient-to-r to-[#086046] from-[#067f5b] bg-clip-text text-transparent">
+        in Kerala
+      </span>
+    </h1>
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white max-w-3xl mx-auto md:mx-0 mb-8 leading-relaxed">
+      Experience immersive visuals through our creative video storytelling
+    </p>
+  </div>
 
-            </span>
-              <span className="bg-gradient-to-r to-[#086046] from-[#067f5b] bg-clip-text text-transparent">
-               in Kerala
-              </span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-black  max-w-3xl mx-auto mb-8 leading-relaxed">
-              Experience immersive visuals through our creative video storytelling
-            </p>
-
-           
-
-          </div>
-        </section>
+  {/* Image Section */}
+  <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+    <img
+      src="/images/Student_Image.png"
+      alt="Student"
+      className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
+    />
+  </div>
+</section>
 
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
+
+       
       </div>
 
 

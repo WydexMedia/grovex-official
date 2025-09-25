@@ -36,23 +36,8 @@ export default function Clients() {
         </div>
 
         {/* Logos Grid */}
-        <div className="mb-20">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12">
-            {clientLogos.map((logo, index) => (
-              <div
-                key={index}
-                className="group flex items-center justify-center p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-gray-300 hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={150}
-                  height={50}
-                  className="max-h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
-                />
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-col justify-center items-center text-black text-4xl my-4">
+          Our Cerification is the best in kerala 
         </div>
 
         {/* CTA Section */}
@@ -67,7 +52,7 @@ export default function Clients() {
       bg-black rounded-lg
       shadow-lg hover:shadow-2xl
       transition-all duration-300
-      cursor-pointer
+      
     "
           >
             <div className="flex items-center justify-center text-2xl md:text-3xl font-semibold text-white mb-4 text-center gap-2">

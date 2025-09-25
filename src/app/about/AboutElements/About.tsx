@@ -27,6 +27,19 @@ function About() {
         };
     }, []);
 
+    const Cards = [
+        {
+            title: 'Mission',
+            description: "Our mission at Grovex is to make digital advertising accessible and effective for every entrepreneur. We work closely with startups and businesses to design clear, affordable Meta Ads strategies that eliminate guesswork and deliver measurable growth. By combining creativity, performance psychology, and hands-on execution, we ensure our clients don’t just run ads—they build lasting impact online.",
+            image: "/images/Mission.png"
+        },
+        {
+            title: 'Vision',
+            description: "To become the trusted partner for startups and growing businesses by delivering simplified, results-driven marketing. At Grovex, we envision empowering entrepreneurs who understand digital marketing but need sharper, affordable Meta Ads strategies to scale online. As an in-house venture of Wydex Media, our long-term vision is to build a growth ecosystem where businesses can access high-impact advertising without complexity or inflated costs.",
+            image: "/images/Vison.png"
+        },
+    ]
+
     return (
         <>
             {/* About Section */}
@@ -59,21 +72,47 @@ function About() {
 
                         <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                             Grovex is a modern learning platform focused on helping individuals and businesses grow through practical,
-                             industry-ready skills. We create hands-on courses in digital marketing, Meta Ads, and other in-demand areas, 
-                             designed to turn knowledge into real results. With expert mentors and updated content,
-                              Grovex makes learning simple, impactful, and career-focused.
+                            industry-ready skills. We create hands-on courses in digital marketing, Meta Ads, and other in-demand areas,
+                            designed to turn knowledge into real results. With expert mentors and updated content,
+                            Grovex makes learning simple, impactful, and career-focused.
 
                         </p>
                     </div>
 
                     {/* Cards Grid */}
-                   
+
+
+                    <div className="flex justify-center items-center gap-4 my-5">
+                        {
+                            Cards.map((items) => (
+                                <>
+                                    <div className="max-w-sm bg-gradient-to-r from-[#141E30] via-[#243B55] to-[#0F2027]
+ border flex items-center justify-center h-[400px] border-gray-200 rounded-lg shadow-sm ">
+                                        <a href="#">
+                                            <img className="rounded-t-lg" src={items.image} alt="" />
+                                        </a>
+                                        <div className="p-5">
+                                            <a href="#">
+                                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white ">{items.title} </h5>
+                                            </a>
+                                            <p className="mb-3 font-normal text-white  my-4">{items.description}</p>
+
+                                        </div>
+                                    </div>
+                                </>
+                            ))
+                        }
+                    </div>
+
+
+
+
 
                     {/* Bottom CTA */}
                     <div className="text-center">
                         <div className="inline-flex items-center justify-center p-1 bg-gradient-to-r from-[#086046] to-[#18cb96] rounded-full mb-4">
                             <div className="bg-white rounded-full px-8 py-3">
-                                <span className="text-sm font-semibold bg-gradient-to-r from-[#086046] to-[#18cb96]  bg-clip-text text-transparent">
+                                <span className="text-sm font-semibold text-black">
                                     Ready to Choose Your Platform?
                                 </span>
                             </div>

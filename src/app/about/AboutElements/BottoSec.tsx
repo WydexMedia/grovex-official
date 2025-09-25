@@ -62,7 +62,7 @@ function BottomSec() {
             <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <span className="text-white text-2xl font-bold">💎</span>
             </div>
-            <h3 className="text-xl font-bold mb-2">Premium Quality</h3>
+            <h3 className="text-xl font-bold mb-2">Course</h3>
             <p className="text-gray-600">High-quality creative and strategic execution</p>
           </div>
         </div>
