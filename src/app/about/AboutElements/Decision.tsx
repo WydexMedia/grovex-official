@@ -87,11 +87,11 @@ function Decision() {
               <div className="bg-gray-50 rounded-3xl p-8 sm:p-10 lg:p-12 border-2 border-gray-100">
                 <div className="max-w-3xl mx-auto">
                   <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-4 sm:mb-6">
-                    Still Not Sure Which Platform to Choose?
+                   Still Not Sure Which Course to Choose?
                   </h3>
                   
                   <p className="text-gray-700 text-base sm:text-lg lg:text-xl mb-8 sm:mb-10 leading-relaxed">
-                    Our experts can analyze your business goals, target audience, and budget to recommend the perfect advertising strategy tailored just for you.
+                   Our mentors can understand your career goals, interests, and skills to guide you toward the right digital course designed just for you.
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
@@ -101,7 +101,7 @@ function Decision() {
                       rel="noopener noreferrer"
                       className="w-full sm:w-auto px-8 py-4 bg-black text-white font-semibold rounded-full transition-all duration-300 hover:bg-gray-800 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-gray-300 text-base sm:text-lg cursor-pointer"
                     >
-                      Get Free Consultation
+                     Get Free Guidance
                     </a>
                   </div>
                 </div>

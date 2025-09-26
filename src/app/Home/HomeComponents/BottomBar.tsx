@@ -36,15 +36,7 @@ function BottomBar() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-green-600/10 to-blue-600/10 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Get Started Button */}
-      <div className="text-center mb-10">
-        <button onClick={handleGetStarted}
-          className="learn-more group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#086046] to-[#18cb96]  border border-green-400/40 rounded-xl  text-lg font-medium    transition-all duration-500 backdrop-blur-sm shadow-lg   transform hover:scale-105"
-          style={{ transitionDelay: '0.6s' }}
-        >
-          Get Started
-        </button>
-      </div>
+   
 
       <div className="mx-auto relative z-10">
         {/* Header Section */}
@@ -64,7 +56,7 @@ function BottomBar() {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-           Here’s where all our fresh reads live. From quick updates to in-depth stories, this space brings you ideas, tips, and perspectives worth your time. We keep it simple, useful, and real—so you always have something new to explore.
+           “This is where digital learning meets inspiration. From quick tips to in-depth lessons, we bring you knowledge that’s practical, clear, and future-ready. At our institute, every course is designed to help you grow, apply, and succeed in the digital world.”
           </p>
         </div>
 

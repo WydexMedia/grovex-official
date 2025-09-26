@@ -64,9 +64,9 @@ function About() {
 
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 text-[#1A1D1F] leading-tight">
-                            Smart Advertising Choices That
+                           “Learn Smart. Grow Fast.
                             <span className="block bg-gradient-to-r from-[#186046] to-[#18cb96] bg-clip-text text-transparent mt-2">
-                                Drive Results
+                               Succeed Big.”
                             </span>
                         </h2>
 
