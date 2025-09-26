@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const testimonials = [
   {
-    quote: `"Wydex Media’s expertise and dedication helped us scale Interval to new heights. Their team truly feels like an extension of ours."`,
-    name: 'Aslah Thadathil',
+    quote: `I specialize in SEO, but I wanted to explore social media marketing as well. I joined Grovex’s 5-day Meta Ads course, and it was a great experience. The sessions were clear and easy to understand. I gained useful knowledge about running ads effectively, which gave me more confidence in managing SMM projects. I’m really thankful to Grovex for this opportunity.`,
+    name: 'Lubina',
     role: 'Co-founder of Interval',
-    image: './images/aslah.png',
+    image: './images/Lubina.jpg',
   },
   {
     quote: `"The team at Wydex is proactive, professional, and always delivers more than expected. Highly recommended!"`,
@@ -102,21 +102,22 @@ function ClintSay() {
           </div>
 
           {/* Right Side: Image or Video */}
-          <div className="flex justify-center items-center w-full md:w-1/2 p-6">
-            {testimonials[current].mediaType === "video" ? (
-              <video
-                src={testimonials[current].media}
-                controls
-                className="w-full h-auto max-h-[400px] rounded-lg"
-              />
-            ) : (
-              <img
-                src={testimonials[current].image}
-                alt={testimonials[current].name}
-                className="w-[600px]  min-h-[600px] bg-white rounded-lg object-cover"
-              />
-            )}
-          </div>
+         <div className="flex justify-center items-center w-full md:w-1/2 p-6">
+  {testimonials[current].mediaType === "video" ? (
+    <video
+      src={testimonials[current].media}
+      controls
+      className="w-full max-h-[150px] rounded-lg"
+    />
+  ) : (
+    <img
+      src={testimonials[current].image}
+      alt={testimonials[current].name}
+      className="max-h-[400px] w-auto bg-white rounded-lg object-cover"
+    />
+  )}
+</div>
+
 
           {/* Carousel Controls */}
           <button
