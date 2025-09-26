@@ -8,7 +8,7 @@ import {
   Play,
   ChevronLeft,
   ChevronRight,
-  Dot,
+  // Dot,
 } from "lucide-react";
 
 const courses = [
