@@ -104,14 +104,14 @@ export default function IPadCarousel() {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent text-sm font-bold tracking-widest uppercase">
+            <span className="bg-gradient-to-r from-[#086046] to-[#18cb96] bg-clip-text text-transparent text-sm font-bold tracking-widest uppercase">
               Digital Course Library
             </span>
           </div>
           
           <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-white">Master Digital</span>
-            <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#086046] to-[#18cb96] bg-clip-text text-transparent">
               Marketing Skills
             </span>
           </h1>
@@ -319,7 +319,7 @@ export default function IPadCarousel() {
             <p className="text-gray-300 mb-6 max-w-md">
               Get instant access to all courses and start building your digital marketing expertise today.
             </p>
-            <button className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium text-lg transition-all hover:scale-105 active:scale-95 shadow-lg">
+            <button className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#086046] to-[#18cb96] text-white font-medium text-lg transition-all hover:scale-105 active:scale-95 shadow-lg">
               <BookOpen className="w-5 h-5" />
               Explore All Courses
               <ArrowRight className="w-5 h-5" />

@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomeVideo() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-screen mt-[33px] overflow-hidden bg-black">
       <div className="fixed inset-0 w-full h-full bg-black ">
        
  <div className="w-full bg-black h-full bg-gradient-to-br from-blue-100 to-purple-100" />
