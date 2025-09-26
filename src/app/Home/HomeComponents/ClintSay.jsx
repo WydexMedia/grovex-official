@@ -7,30 +7,6 @@ const testimonials = [
     role: 'Co-founder of Interval',
     image: './images/Lubina.jpg',
   },
-  {
-    quote: `"The team at Wydex is proactive, professional, and always delivers more than expected. Highly recommended!"`,
-    name: 'Muhammed Arshad',
-    role: 'COO Magic Lambs',
-    image: '/images/arshad.jpeg',
-  },
-  {
-    quote: `"From branding to digital marketing, Wydex Media is our go-to partner for growth and innovation."`,
-    name: 'Fazil',
-    role: 'proprietor of parcel service calicut',
-    image: '/images/fazil.jpeg',
-  },
-  {
-    quote: `"Wydex Media transformed our digital presence and helped us reach new customers. Their creativity and professionalism are unmatched."`,
-    name: 'Sadik',
-    role: 'CEO Camiya Diamonds',
-    image: '',
-  },
-  {
-    quote: `"The Wydex team delivered results beyond our expectations. Highly recommend them for any business looking to grow online."`,
-    name: 'CEO Nilam Builders',
-    role: 'CEO Nilam Builders',
-    image: '',
-  },
 ];
 
 function ClintSay() {
@@ -82,7 +58,7 @@ function ClintSay() {
             </div>
           </div>
           <p className="text-xl text-gray-500 font-light max-w-2xl mx-auto">
-            Client page heading
+            
           </p>
         </div>
 
@@ -149,7 +125,7 @@ function ClintSay() {
           <div className="inline-flex items-center space-x-8">
             <div className="w-20 h-px bg-white"></div>
             <span className="text-white/60 text-sm uppercase tracking-widest font-medium">
-              Trusted by Industry Leaders
+             “Trusted by Leading Industry Professionals”
             </span>
             <div className="w-20 h-px bg-white"></div>
           </div>

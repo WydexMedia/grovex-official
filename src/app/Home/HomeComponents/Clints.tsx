@@ -30,9 +30,7 @@ export default function Clients() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
            Our Certifications
           </h2>
-          {/* <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Our clients are everything to us; so are we to them — the best marketing agency in Calicut.
-          </p> */}
+
         </div>
 
         {/* Logos Grid */}
@@ -41,38 +39,7 @@ export default function Clients() {
         </div> */}
 
         {/* CTA Section */}
-        <div className="text-center">
-          <button
-            type="button"
-            onClick={() => router.push('/Home/listClients')}
-            className="
-      group cursor-pointer
-      inline-flex flex-col items-center justify-center
-      px-4 py-4 md:px-10
-      bg-black rounded-lg
-      shadow-lg hover:shadow-2xl
-      transition-all duration-300
-      
-    "
-          >
-            <div className="flex items-center justify-center text-2xl md:text-3xl font-semibold text-white mb-4 text-center gap-2">
-              <span>Our client stories do not end here...</span>
-              <svg
-                className="w-6 h-6 text-gray-400 group-hover:text-white transform group-hover:translate-x-1.5 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
+        
 
 
       </div>
