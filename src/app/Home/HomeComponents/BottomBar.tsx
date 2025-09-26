@@ -22,10 +22,10 @@ function BottomBar() {
       .then(data => setBlogPosts(data));
   }, []);
 
-  const handleGetStarted = () => {
-    const el = document.getElementById('contact');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
+  // const handleGetStarted = () => {
+  //   const el = document.getElementById('contact');
+  //   if (el) el.scrollIntoView({ behavior: 'smooth' });
+  // };
 
   return (
     <section className="bg-black py-20 relative overflow-hidden" id="blog">

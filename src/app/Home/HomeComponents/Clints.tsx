@@ -1,6 +1,6 @@
 import React from 'react';
 // import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 // const clientLogos = [
 //   { src: '/wydex Clinets black/ATHER  best digital marketing agency in calicut.webp', alt: 'Ather' },
@@ -21,7 +21,7 @@ import { useRouter } from 'next/navigation';
 // ];
 
 export default function Clients() {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <section className="bg-white py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
