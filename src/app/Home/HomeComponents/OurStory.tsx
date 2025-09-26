@@ -4,6 +4,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 
 declare global {
   namespace JSX {
@@ -54,12 +55,13 @@ const OurStory: React.FC = () => {
 
             Instead of heavy theory, we focus on structured lessons that make sense and deliver results. Our story is about helping people grow—whether it’s building a career, running a business, or simply gaining confidence in new skills.
           </p>
-          <button
-            className="learn-more group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#086046] to-[#18cb96] rounded-xl text-white text-lg font-medium hover:from-[#086046]/30 hover:to-[#18cb96] hover:border-purple-400/60 transition-all duration-500 backdrop-blur-sm shadow-lg shadow-purple-400/20 hover:shadow-purple-400/30 transform hover:scale-105"
-            style={{ transitionDelay: '0.6s' }}
-          >
+         
+          <Link 
+          href="/about" 
+          className="learn-more group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#086046] to-[#18cb96] rounded-xl text-white text-lg font-medium hover:from-[#086046]/30 hover:to-[#18cb96] hover:border-purple-400/60 transition-all duration-500 backdrop-blur-sm shadow-lg shadow-purple-400/20 hover:shadow-purple-400/30 transform hover:scale-105"
+          style={{ transitionDelay: '0.6s' }}>
             About Us
-          </button>
+          </Link>
         </div>
 
         {/* Right side – 3D logo */}

@@ -69,7 +69,7 @@ const WydexMedia: React.FC = () => {
              focus:outline-none focus:ring-2 focus:ring-[#18cb96] 
              focus:ring-offset-2 focus:ring-offset-black 
              cursor-pointer">
-            <span className="bg-gradient-to-r to-[#82479C] from-[#2160A5] bg-clip-text text-transparent font-bold">
+            <span className="text-white font-bold">
               Get Started Today
             </span>
 

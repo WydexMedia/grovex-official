@@ -28,7 +28,7 @@ function FooterPage() {
                   className="h-[110px] md:h-14 w-[110px] object-contain transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <p className="text-xl font-semibold text-blue-400">Grovex</p>
+              
             </div>
 
             <p className="text-gray-400 text-base leading-relaxed text-center">
@@ -68,6 +68,9 @@ function FooterPage() {
           </div>
 
           {/* Company Section */}
+          <div>
+          
+        </div>
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-blue-400 border-b border-blue-400/30 pb-3">
               Company
@@ -81,9 +84,7 @@ function FooterPage() {
           </div>
 
           {/* Services Section */}
-        <div>
-          
-        </div>
+        
 
           {/* Connect Section */}
           <div className="space-y-6">
