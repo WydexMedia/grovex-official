@@ -6,7 +6,7 @@ import Discription from './HomeComponents/Discription'
 import OurStory from './HomeComponents/OurStory'
 import Services from './HomeComponents/Services'
 import BottomBar from './HomeComponents/BottomBar'
-import Clients from './HomeComponents/Clints'
+// import Clients from './HomeComponents/Clints'
 import ClintSay from './HomeComponents/ClintSay'
 
 
@@ -19,7 +19,7 @@ function Home() {
         <OurStory />
         <Services />
         <BottomBar />
-        <Clients />
+        {/* <Clients /> */}
         <ClintSay />
 
       </div>
