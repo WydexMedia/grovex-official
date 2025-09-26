@@ -27,26 +27,26 @@ function Decision() {
     };
   }, []);
 
-  const decisionOptions = [
-    {
-      title: 'Choose Google Ads if:',
-      description: "Your goal is immediate conversions. You're targeting people who already want what you offer. Perfect for service-based businesses, e-commerce, and companies looking for fast, measurable results.",
-      icon: '🎯',
-      features: ['High Intent Traffic', 'Immediate Results', 'Keyword Targeting', 'Local Visibility']
-    },
-    {
-      title: 'Choose Meta Ads if:',
-      description: "Your goal is to build brand recognition, tell your story, and reach new audiences. Meta Ads create connections with people who don't know your brand yet but may become loyal customers.",
-      icon: '💡',
-      features: ['Brand Awareness', 'Visual Storytelling', 'Audience Building', 'Social Engagement']
-    },
-    {
-      title: 'Combine Both for Best Results:',
-      description: "A balanced strategy delivers the most impact. Google Ads brings in high-intent buyers, while Meta Ads builds awareness, nurtures interest, and supports retargeting.",
-      icon: '🚀',
-      features: ['Maximum Reach', 'Complete Funnel', 'Optimized ROI', 'Synergistic Effect']
-    }
-  ];
+  // const decisionOptions = [
+  //   {
+  //     title: 'Choose Google Ads if:',
+  //     description: "Your goal is immediate conversions. You're targeting people who already want what you offer. Perfect for service-based businesses, e-commerce, and companies looking for fast, measurable results.",
+  //     icon: '🎯',
+  //     features: ['High Intent Traffic', 'Immediate Results', 'Keyword Targeting', 'Local Visibility']
+  //   },
+  //   {
+  //     title: 'Choose Meta Ads if:',
+  //     description: "Your goal is to build brand recognition, tell your story, and reach new audiences. Meta Ads create connections with people who don't know your brand yet but may become loyal customers.",
+  //     icon: '💡',
+  //     features: ['Brand Awareness', 'Visual Storytelling', 'Audience Building', 'Social Engagement']
+  //   },
+  //   {
+  //     title: 'Combine Both for Best Results:',
+  //     description: "A balanced strategy delivers the most impact. Google Ads brings in high-intent buyers, while Meta Ads builds awareness, nurtures interest, and supports retargeting.",
+  //     icon: '🚀',
+  //     features: ['Maximum Reach', 'Complete Funnel', 'Optimized ROI', 'Synergistic Effect']
+  //   }
+  // ];
 
   return (
     <>

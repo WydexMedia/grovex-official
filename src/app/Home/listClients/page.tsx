@@ -43,9 +43,9 @@ export default function ListClients() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
             Clients
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          {/* <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Our clients are everything to us; so are we to them.
-          </p>
+          </p> */}
         </div>
 
         {/* Logos Grid */}
