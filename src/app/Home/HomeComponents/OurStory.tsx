@@ -63,7 +63,7 @@ const OurStory: React.FC = () => {
           </h2>
 
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-           "Grovex started with a simple idea—learning should be clear, useful, and connected to the real world. We bring together courses in Meta Ads, SEO, Marketing Psychology, and Zoho Books to give learners practical skills they can apply right away. Instead of heavy theory, we focus on structured lessons that make sense and deliver results. Our story is about helping people grow—whether it’s building a career, running a business, or simply gaining confidence in new skills."
+           &ldquo;Grovex started with a simple idea—learning should be clear, useful, and connected to the real world. We bring together courses in Meta Ads, SEO, Marketing Psychology, and Zoho Books to give learners practical skills they can apply right away. Instead of heavy theory, we focus on structured lessons that make sense and deliver results. Our story is about helping people grow—whether it&apos;s building a career, running a business, or simply gaining confidence in new skills.&rdquo;
           </p>
 
           {/* micro trust points */}

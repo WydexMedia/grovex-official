@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { ArrowRight, Calendar, User } from 'lucide-react';
+// import Link from 'next/link';
+// import { ArrowRight, Calendar, User } from 'lucide-react';
 import Image from 'next/image';
 
 // Add BlogPost type for type safety
@@ -53,7 +53,7 @@ function BottomBar() {
     {/* Blog Posts Grid - Focused on Image Content Only */}
     <div className="overflow-x-auto scrollbar-none">
       <div className="flex flex-nowrap space-x-6 my-3">
-        {blogPosts.map((post, index) => (
+         {blogPosts.map((post) => (
           <div key={post._id} className={`flex-shrink-0 w-80 bg-gray-900 overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-105 border-gray-800`}>
             <div className="relative overflow-hidden">
               <Image
