@@ -2,51 +2,76 @@ import React from 'react';
 
 function HomeVideo() {
   return (
-    <div className="relative w-full min-h-screen mt-[33px] overflow-hidden bg-black">
-      <div className="fixed inset-0 w-full h-full bg-black ">
-       
- <div className="w-full bg-black h-full bg-gradient-to-br from-blue-100 to-purple-100" />
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40" />
+   
+    <section className="relative overflow-hidden bg-neutral-950 mt-[33px]  ">
+      {/* --- Decorative background --- */}
+      {/* Soft color glows */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_12%_-10%,rgba(16,185,129,0.20),transparent),radial-gradient(900px_500px_at_90%_0%,rgba(59,130,246,0.18),transparent)]" />
+        {/* Subtle grid with radial fade */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(80%_60%_at_50%_40%,black,transparent)]" />
       </div>
 
-      {/* Content Overlay */}
-      <div className="relative z-10  w-full min-h-screen flex flex-col">
-        {/* Hero Section */}
-        <section className="flex flex-col md:flex-row bg-black  px-4 py-20">
-  {/* Text Section */}
- <div className="max-w-4xl  w-full md:ml-[10%]">
-  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-    <span className="bg-gradient-to-r to-[#086046] from-[#18cb96] bg-clip-text text-transparent">
-      Advanced Meta Ads Course{" "}
-    </span>
-    <span className="bg-gradient-to-r to-[#086046] from-[#067f5b] bg-clip-text text-transparent">
-      in Kerala
-    </span>
-  </h1>
-  {/* <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white max-w-3xl mx-auto mb-8 leading-relaxed">
-    Experience immersive visuals through our creative video storytelling
-  </p> */}
-</div>
+      {/* --- Content --- */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid min-h-[88vh] grid-cols-1 items-center gap-10 py-20 md:grid-cols-2">
+          {/* Copy */}
+          <div className="max-w-2xl">
+            <p className="mb-3 text-sm font-medium tracking-wider text-emerald-300/80">
+              GROVEX • SKILLS THAT MATTER
+            </p>
 
+            <h1 className="text-balance text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              <span className="bg-gradient-to-r from-emerald-400 via-emerald-500 to-green-600 bg-clip-text text-transparent">
+                Advanced Meta <span className="bg-gradient-to-r from-emerald-400 via-emerald-500 to-green-600 bg-clip-text text-transparent">Ads</span>
+              </span>{" "}
+              <span className="text-white/90">Course in Kerala</span>
+            </h1>
 
-  {/* Image Section */}
-  <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
-    <img
-      src="/images/Student_Image.png"
-      alt="Student"
-      className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
-    />
-  </div>
-</section>
+            <p className="mt-5 max-w-xl text-pretty text-base text-white/70 sm:text-lg">
+              Master performance marketing the practical way—ad strategy, creatives,
+              tracking, and scaling. Designed for marketers, founders, and growth teams.
+            </p>
 
+            {/* CTAs */}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold text-white shadow-lg shadow-emerald-500/25 transition-all duration-300 ease-out hover:scale-[1.03] bg-gradient-to-r from-emerald-600 to-green-700 hover:from-green-600 hover:to-emerald-700"
+              >
+                Contact Us
+              </a>
 
+              
+            </div>
 
-       
+            
+           
+          </div>
+
+          {/* Visual */}
+          <div className="relative flex justify-center md:justify-end">
+            <div className="absolute -inset-x-10 bottom-10 -z-10 h-40 rounded-[40%] bg-emerald-500/15 blur-3xl" />
+            <img
+              src="/images/Student_Image.png"
+              alt="Student holding laptop and notes"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain drop-shadow-[0_30px_60px_rgba(16,185,129,0.25)] motion-safe:animate-[float_6s_ease-in-out_infinite]"
+            />
+          </div>
+        </div>
       </div>
 
+      {/* Keyframes (scoped) */}
+      <style jsx global>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-8px); }
+        }
+      `}</style>
+    </section>
+  
 
-    </div>
+
   );
 }
 
