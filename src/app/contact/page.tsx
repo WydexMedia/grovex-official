@@ -59,8 +59,14 @@ function EnquiryForm({ onSuccess }: { onSuccess?: () => void }) {
       if (data.success) {
         setSuccess('Submitted!');
         showToast.success('Enquiry Submitted!', 'Your enquiry has been submitted successfully');
-        setForm({ name: '', email: '', phone: '', city: '', course: '', message: '' });
+        
         if (onSuccess) onSuccess();
+        const text = encodeURIComponent(
+        `New enquiry:\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone ?? ''}\nMessage: ${form.message}`
+      );
+      const waUrl = `https://wa.me/+918511700916?text=${text}`;
+      window.open(waUrl, '_blank');
+      setForm({ name: '', email: '', phone: '', city: '', course: '', message: '' });
       } else {
         setError(data.message || 'Submission failed');
         showToast.error('Submission Failed', data.message || 'An error occurred during submission');
