@@ -78,7 +78,7 @@ function HomePageContent() {
 
   return (
     <AppShell>
-      <button onClick={handleGetStartedClick} className="px-6 py-3 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition">Get Started</button>
+      {/* <button onClick={handleGetStartedClick} className="px-6 py-3 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition">Get Started</button> */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
           <div className="bg-white text-black rounded-xl shadow-lg w-full max-w-md p-8 relative">
@@ -88,7 +88,7 @@ function HomePageContent() {
                 router.replace('/');
               }
             }} className="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl">&times;</button>
-            <h2 className="text-2xl font-bold mb-4">Get Started</h2>
+            
             <EnquiryForm onSuccess={() => setShowModal(false)} />
           </div>
         </div>
