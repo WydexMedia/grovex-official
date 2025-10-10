@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,9 @@ function Header() {
 
   const handleGetStarted = () => {
     router.push('/?getStarted=1');
+  };
+  const handleStartExam = () => {
+    router.push('/exampage');
   };
 
   useEffect(() => {
@@ -90,10 +94,17 @@ function Header() {
           <div className="hidden md:block">
   <button 
     onClick={handleGetStarted} 
-    className="px-5 py-2 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
-  >
+    className="px-5 py-2 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer">
     Get Started
   </button>
+  <button
+  className="px-5 py-2 ms-4 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
+  onClick={handleStartExam}
+  >
+
+    Attend Exam
+  </button>
+
 </div>
 
 
@@ -129,12 +140,18 @@ function Header() {
                 {item}
               </div>
             ))}
-            <div className="pt-4 border-t border-blue-400/20 mt-4">
+            <div className="pt-4 border-t border-blue-400/20 mt-4 gap-7">
               <button 
-                className="w-full px-6 py-3 bg-black border border-blue-400/30 text-white font-medium rounded-lg hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer"
-                onClick={() => { handleGetStarted(); setIsOpen(false); }}
+                className="w-full px-6 py-3 bg-gradient-to-r from-green-400 to-green-600 border border-blue-400/30 text-white font-medium rounded-lg hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer"
+                onClick={handleStartExam}
               >
                 Get Started
+              </button>
+              <button 
+                className="w-full px-6 py-3 bg-gradient-to-r from-green-400 to-green-600 border border-blue-400/30 text-white font-medium rounded-lg mt-5 hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer"
+                // onClick={() => { handleGetStarted(); setIsOpen(false); }}
+              >
+                Attend Exam
               </button>
             </div>
           </nav>

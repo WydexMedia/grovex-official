@@ -13,4 +13,4 @@ export async function connectToDatabase() {
   await client.connect();
   db = client.db();
   return { db, client };
-} 
+}
