@@ -663,7 +663,7 @@ export default function AdminPage() {
                         <td className="px-6 py-4">
                           <div className="flex items-center text-sm text-gray-600">
                             <Calendar className="w-4 h-4 mr-1" />
-                            {app.createdAt ? new Date(app.createdAt).toLocaleDateString() : ''}
+                            {app.createdAt ? new Date(app.createdAt).toLocaleDateString("en-GB") : ''}
                           </div>
                         </td>
                         <td className="px-6 py-4">

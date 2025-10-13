@@ -69,12 +69,7 @@ function HomePageContent() {
     }
   }, [searchParams]);
 
-  const handleGetStartedClick = () => {
-    setShowModal(true);
-    if (searchParams.get('getStarted') !== '1') {
-      router.push('/?getStarted=1');
-    }
-  };
+  
 
   return (
     <AppShell>
