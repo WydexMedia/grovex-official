@@ -303,7 +303,7 @@ export async function POST(req: Request) {
       total,
       percent,
       passed,
-      createdAt: new Date()
+      submittedAt: new Date()
     });
 
     return NextResponse.json({ success: true, score, total, percent, passed, details });

@@ -76,6 +76,7 @@ function FooterPage() {
                 <Link href="/about" className="block text-gray-300 hover:text-emerald-400 transition-all duration-300 hover:translate-x-1 text-base">About</Link>
                 <Link href="/#services" className="block text-gray-300 hover:text-emerald-400 transition-all duration-300 hover:translate-x-1 text-base">Services</Link>
                 <Link href="/contact" className="block text-gray-300 hover:text-emerald-400 transition-all duration-300 hover:translate-x-1 text-base">Contact</Link>
+                <Link href="/exampage" className="block text-gray-300 hover:text-emerald-400 transition-all duration-300 hover:translate-x-1 text-base">Attend Exam</Link>
               </div>
             </div>
           </div>
