@@ -64,7 +64,7 @@ function ClintSay() {
 
         {/* Carousel */}
         <div
-          className="relative flex flex-col md:flex-row items-center w-full h-[600px] max-w-6xl mx-auto "
+          className="relative flex flex-col md:flex-row items-center w-full min-h-[600px] max-w-6xl mx-auto "
           onTouchStart={onTouchStart}
           onTouchMove={onTouchMove}
           onTouchEnd={onTouchEnd}

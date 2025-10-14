@@ -10,11 +10,11 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-    const router = useRouter();
+  const router = useRouter();
 
 
-  const userClicke=(item:string)=>{
-   switch (item) {
+  const userClicke = (item: string) => {
+    switch (item) {
       case 'Works':
         router.push('/works');
         break;
@@ -36,12 +36,10 @@ function Header() {
       default:
         console.log('No route found for:', item);
     }
-    
+
   }
 
-  const handleGetStarted = () => {
-    router.push('/?getStarted=1');
-  };
+
   const handleStartExam = () => {
     router.push('/exampage');
   };
@@ -55,15 +53,14 @@ function Header() {
   const navItems: string[] = ['Services', 'About', 'Contact'];
   // works
 
-  return ( 
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all ${
-      scrolled 
+  return (
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled
         ? 'bg-black/40 backdrop-blur-lg border-b border-blue-400/20'
         : 'bg-black/90 border-b border-blue-400/10'
-    }`}>
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          
+
           {/* Logo */}
           <Link href="/" className="flex  items-center space-x-2 group">
             <Image
@@ -74,13 +71,13 @@ function Header() {
               className=" w-[110px] h-[110px] object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-2 lg:space-x-4">
             {navItems.map((item) => (
               <div
                 key={item}
-                onClick={()=>userClicke(item)}
+                onClick={() => userClicke(item)}
                 className="relative px-3 lg:px-4 py-2 text-neutral-300 hover:text-white hover:cursor-pointer   font-medium transition-all duration-300 group text-sm lg:text-base"
               >
                 <span className="relative z-10" >{item}</span>
@@ -92,20 +89,22 @@ function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-  <button 
-    onClick={handleGetStarted} 
-    className="px-5 py-2 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer">
-    Get Started
-  </button>
-  <button
-  className="px-5 py-2 ms-4 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
-  onClick={handleStartExam}
-  >
 
-    Attend Exam
-  </button>
+            <button
+              className="px-5 py-2 ms-4 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
+              onClick={handleStartExam}
+            >
 
-</div>
+              Attend Exam
+            </button>
+            <a
+              className="px-5 py-2 ms-4 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
+              href='/login'
+            >
+              Login
+            </a>
+
+          </div>
 
 
           {/* Mobile menu button */}
@@ -122,16 +121,15 @@ function Header() {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          }`}
       >
         <div className="bg-black/95 backdrop-blur-lg border-t border-blue-400/20">
           <nav className="px-4 py-6 space-y-2">
             {navItems.map((item) => (
               <div
                 key={item}
-                onClick={()=>{
+                onClick={() => {
                   userClicke(item);
                   setIsOpen(false);
                 }}
@@ -141,18 +139,20 @@ function Header() {
               </div>
             ))}
             <div className="pt-4 border-t border-blue-400/20 mt-4 gap-7">
-              <button 
-                className="w-full px-6 py-3 bg-gradient-to-r from-green-400 to-green-600 border border-blue-400/30 text-white font-medium rounded-lg hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer"
-                onClick={handleStartExam}
+
+              <button
+              className="px-5 py-2 ms-4 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
+              onClick={handleStartExam}
+            >
+
+              Attend Exam
+            </button>
+              <a
+                className="px-5 py-2 ms-4 bg-gradient-to-r from-green-400 to-green-600 text-white font-medium rounded-lg hover:from-green-500 hover:to-green-700 transition-all duration-300 shadow-lg shadow-green-400/20 cursor-pointer"
+                href='/login'
               >
-                Get Started
-              </button>
-              <button 
-                className="w-full px-6 py-3 bg-gradient-to-r from-green-400 to-green-600 border border-blue-400/30 text-white font-medium rounded-lg mt-5 hover:bg-blue-400/10 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-400/5 cursor-pointer"
-                // onClick={() => { handleGetStarted(); setIsOpen(false); }}
-              >
-                Attend Exam
-              </button>
+                Login
+              </a>
             </div>
           </nav>
         </div>

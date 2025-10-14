@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 
 
@@ -82,24 +83,25 @@ export default function DigitalMarketingExam() {
         )?.value;
 
         if (!emailInput) {
-            alert("Email is required")
+            // toast.warning("Email is required")
+            showToast(t.emailRequired, "warning");
             return;
         }
-        // function showToast(message: string, type: "success" | "error" | "warning" | "info") {
-        //     switch (type) {
-        //         case "success":
-        //             toast.success(message);
-        //             break;
-        //         case "error":
-        //             toast.error(message);
-        //             break;
-        //         case "warning":
-        //             toast.warning(message);
-        //             break;
-        //         default:
-        //             toast(message);
-        //     }
-        // }
+        function showToast(message: string, type: "success" | "error" | "warning" | "info") {
+            switch (type) {
+                case "success":
+                    toast.success(message);
+                    break;
+                case "error":
+                    toast.error(message);
+                    break;
+                case "warning":
+                    toast.warning(message);
+                    break;
+                default:
+                    toast(message);
+            }
+        }
 
 
 
@@ -191,7 +193,7 @@ export default function DigitalMarketingExam() {
         if (!res.ok) {
             throw new Error("Failed to fetch tutors");
         }
-        return res.json(); // { "Mehandi Tutor": ["Jasira"] }
+        return res.json();
     };
 
 
@@ -269,14 +271,29 @@ export default function DigitalMarketingExam() {
                     )}`;
                 }
             } else {
-                alert(result.error || "Error submitting exam.");
+                showToast(result.error || "Error submitting exam.", "error");
                 setSubmitting(false);
+                function showToast(message: string, type: "success" | "error" | "warning" | "info") {
+                    switch (type) {
+                        case "success":
+                            toast.success(message);
+                            break;
+                        case "error":
+                            toast.error(message);
+                            break;
+                        case "warning":
+                            toast.warning(message);
+                            break;
+                        default:
+                            toast(message);
+                    }
+                }
             }
 
-           
+
         } catch (err) {
             console.error(err);
-            alert("Network error submitting exam.");
+            toast.error("Network error submitting exam.");
             setSubmitting(false);
         }
     };
@@ -431,9 +448,9 @@ export default function DigitalMarketingExam() {
                                                             className="flex items-start gap-3 cursor-pointer hover:bg-gray-50 p-2 -m-2"
                                                         >
                                                             <input
-                                                            key={q._id}
+                                                                key={q._id}
                                                                 type="radio"
-                                                                 name={`q-${q._id.toString()}`}
+                                                                name={`q-${q._id.toString()}`}
                                                                 value={option.id}
                                                                 required
                                                                 className="mt-1 h-4 w-4"
