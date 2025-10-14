@@ -41,7 +41,6 @@ export default function LoginPage() {
     e.preventDefault();
     setError("")
 
- main
     try {
       const res = await fetch("/api/admin/login", {
         method: "POST",

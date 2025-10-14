@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect,useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Trash2} from 'lucide-react';
 import {
@@ -59,8 +59,8 @@ export default function Dashboard() {
   const [selectedUserId, setSelectedUserId] = useState<string>("");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
+  const inputRef = useRef<HTMLInputElement>(null);
 
- main
   useEffect(() => {
     fetchUsers()
   }, []);
