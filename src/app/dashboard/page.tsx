@@ -60,8 +60,7 @@ export default function Dashboard() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
 
-   const inputRef = useRef<HTMLInputElement | null>(null);
-
+ main
   useEffect(() => {
     fetchUsers()
   }, []);
@@ -229,7 +228,6 @@ export default function Dashboard() {
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') setSearching(true);
                 }}
-                
               />
               <button
                 className="bg-black text-white px-4 py-2 text-sm rounded hover:bg-gray-900 transition-colors duration-200"
