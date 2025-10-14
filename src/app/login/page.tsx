@@ -40,8 +40,8 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("")
-    console.log("EMAIL:-",email)
-    console.log("PASSWORD:-",password)
+
+ main
     try {
       const res = await fetch("/api/admin/login", {
         method: "POST",

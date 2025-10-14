@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect,useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Trash2} from 'lucide-react';
 import {
@@ -60,6 +60,7 @@ export default function Dashboard() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
 
+ main
   useEffect(() => {
     fetchUsers()
   }, []);
@@ -133,7 +134,13 @@ export default function Dashboard() {
     setCurrentPage(1);
   }, [itemsPerPage]);
 
-
+  useEffect(() => {
+    if (searching) {
+      inputRef.current?.focus();
+      inputRef.current?.select();
+      setSearching(false); 
+    }
+  }, [searching]);
 
   // modal oepning and closing code 
   const openConfirmationModal = () => {
@@ -214,6 +221,7 @@ export default function Dashboard() {
               <input
                 type="text"
                 placeholder="Search by name, email, batch, etc."
+                ref={inputRef}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="border border-gray-300 rounded px-3 text-black py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black"
